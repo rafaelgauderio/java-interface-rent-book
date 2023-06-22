@@ -30,7 +30,7 @@ public class Invoice {
         this.tax = tax;
     }
 
-    public Double totalPaymentValue () {
+    public Double totalPayment () {
         Double totalPayment = this.getBasicPayment() + this.getTax();
         return totalPayment;
     }
