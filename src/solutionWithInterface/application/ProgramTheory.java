@@ -18,5 +18,12 @@ public class ProgramTheory {
                 "\tIs is one of the ways to carry out the inversion of control.\n" +
                 "\tAn external component instantiates the dependency which is injected by the superclass object.\n" +
                 "\tCan be implemented through many ways, like: constructors, instantiation class, container or frameword.\n");
+
+        System.out.println("\nDifference between inheritance and interface\n" +
+                "\tinheritance. Key word 'extends'.\n" +
+                "\tInheritance reuse of parameters (information) and methods (behavior).\n" +
+                "\tinterface = key word 'implements'.\n" +
+                "\tInterface has the main objective to fulfilled a contract.\n" +
+                "\tIs is possible to make an implementation that combines interface with abstract class.\n");
     }
 }
