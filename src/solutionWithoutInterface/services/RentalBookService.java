@@ -20,7 +20,13 @@ public class RentalBookService {
     public void createInvoice(BookRental bookRental) {
 
         double minutes = Duration.between(bookRental.getBeginDate(), bookRental.getEndDate()).toMinutes();
-        double fractionHours = minutes /60.0;
+        double fractionHours = Duration.between(bookRental.getBeginDate(),bookRental.getEndDate()).toMinutes() /60.0;
+
+        /*
+        System.out.println("\nminutos: " + minutes);
+        System.out.println("fractionHours: " + fractionHours);
+        System.out.println("HoursRoundUp: " + Math.ceil(fractionHours));
+         */
 
         double basicPayment = 0.0;
         // payment calculate in days if hours bigger than 12 hours,
